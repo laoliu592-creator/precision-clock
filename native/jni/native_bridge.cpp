@@ -11,7 +11,6 @@
 namespace {
 constexpr std::uint32_t kUnsynced = 0;
 constexpr std::uint32_t kSyncing = 1;
-constexpr std::uint32_t kSynced = 2;
 constexpr std::uint32_t kDegraded = 3;
 clockcore::ClockEngine g_engine;
 std::atomic<bool> g_running{false};
