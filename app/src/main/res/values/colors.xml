@@ -1,0 +1,13 @@
+<resources>
+    <color name="page_background">#0B0F14</color>
+    <color name="card_background">#151B22</color>
+    <color name="hero_background">#111820</color>
+    <color name="countdown_background">#0F1D20</color>
+    <color name="input_background">#10151B</color>
+    <color name="accent">#55E6C1</color>
+    <color name="text_primary">#F2F5F7</color>
+    <color name="text_secondary">#9AA6B2</color>
+    <color name="text_muted">#64707B</color>
+    <color name="stroke">#26303A</color>
+    <color name="transparent">#00000000</color>
+</resources>
