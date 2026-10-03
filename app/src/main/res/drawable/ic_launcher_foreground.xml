@@ -1,9 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!-- Outer precision bezel -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M54,16A38,38 0,1 0,54 92A38,38 0,1 0,54 16M54,25A29,29 0,1 1,54 83A29,29 0,1 1,54 25M54,32L50,32L50,56L69,67L73,60L58,51L58,32Z"/>
+        android:fillColor="#18D9FF"
+        android:pathData="M54,13A41,41 0,1 0,54 95A41,41 0,1 0,54 13M54,19A35,35 0,1 1,54 89A35,35 0,1 1,54 19" />
+    <path
+        android:fillColor="#1687FF"
+        android:pathData="M54,16A38,38 0,1 0,54 92A38,38 0,1 0,54 16M54,21A33,33 0,1 1,54 87A33,33 0,1 1,54 21" />
+
+    <!-- Dial -->
+    <path
+        android:fillColor="#071326"
+        android:pathData="M54,24A30,30 0,1 0,54 84A30,30 0,1 0,54 24" />
+
+    <!-- Cardinal marks -->
+    <path android:fillColor="#DDFBFF" android:pathData="M52,27h4v9h-4zM52,72h4v9h-4zM27,52h9v4h-9zM72,52h9v4h-9z" />
+
+    <!-- Minor marks -->
+    <path android:fillColor="#4ADFFF" android:pathData="M38.5,29.8l2,3.5l-2.6,1.5l-2,-3.5zM69.5,29.8l2.6,1.5l-2,3.5l-2.6,-1.5zM78.2,39l1.5,2.6l-3.5,2l-1.5,-2.6zM78.2,69l-3.5,-2l1.5,-2.6l3.5,2zM29.8,69l3.5,-2l1.5,2.6l-3.5,2zM29.8,39l1.5,-2.6l3.5,2l-1.5,2.6z" />
+
+    <!-- Hands -->
+    <path android:fillColor="#F7FBFF" android:pathData="M52.2,54.8L34,39.5l2.8,-3.3L55.2,51.2z" />
+    <path android:fillColor="#F7FBFF" android:pathData="M54.8,54.8L72.8,40.2l2.8,3.4L57.5,58z" />
+    <path android:fillColor="#18D9FF" android:pathData="M53,56L37,73L39.5,75L56,57z" />
+
+    <!-- Center hub -->
+    <path android:fillColor="#BDF8FF" android:pathData="M54,48A6,6 0,1 0,54 60A6,6 0,1 0,54 48" />
+    <path android:fillColor="#126BFF" android:pathData="M54,51A3,3 0,1 0,54 57A3,3 0,1 0,54 51" />
+
+    <!-- Precision target badge, no text -->
+    <path android:fillColor="#08224B" android:pathData="M79,68A14,14 0,1 0,79 96A14,14 0,1 0,79 68" />
+    <path android:fillColor="#20E2FF" android:pathData="M79,70A12,12 0,1 0,79 94A12,12 0,1 0,79 70M79,73A9,9 0,1 1,79 91A9,9 0,1 1,79 73" />
+    <path android:fillColor="#DDFBFF" android:pathData="M77.5,75h3v5.5h-3zM77.5,83.5h3V89h-3zM75,80.5v3h-5.5v-3zM83.5,80.5h5.5v3h-5.5z" />
+    <path android:fillColor="#18D9FF" android:pathData="M77.5,79.5h3v5h-3zM79,78A3.5,3.5 0,1 0,79 85A3.5,3.5 0,1 0,79 78" />
 </vector>

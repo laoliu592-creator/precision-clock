@@ -1,4 +1,4 @@
-# Precision Clock — V1.0 — Android 10+, arm64-v8a
+# 时序 — V1.0 — Android 10+, arm64-v8a
 
 This is the integrated V1.0 engineering build for the precision countdown clock.
 

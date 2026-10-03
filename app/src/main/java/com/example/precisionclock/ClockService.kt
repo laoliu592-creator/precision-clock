@@ -52,5 +52,5 @@ class ClockService : Service() {
     }
     private fun formatDuration(ns: Long): String { val sign = if (ns < 0) "-" else ""; val ms = kotlin.math.abs(ns) / 1_000_000L; return String.format(Locale.US, "%s%02d:%02d:%02d.%03d", sign, ms / 3_600_000L, (ms / 60_000L) % 60L, (ms / 1_000L) % 60L, ms % 1_000L) }
     private fun createChannel() { getSystemService(NotificationManager::class.java).createNotificationChannel(NotificationChannel(CHANNEL, "Precision Clock", NotificationManager.IMPORTANCE_LOW)) }
-    private fun notification(): Notification = Notification.Builder(this, CHANNEL).setContentTitle("Precision Clock").setContentText("NTP 精准时钟正在运行").setSmallIcon(android.R.drawable.ic_menu_recent_history).setOngoing(true).build()
+    private fun notification(): Notification = Notification.Builder(this, CHANNEL).setContentTitle("时序").setContentText("NTP 精准时钟正在运行").setSmallIcon(android.R.drawable.ic_menu_recent_history).setOngoing(true).build()
 }

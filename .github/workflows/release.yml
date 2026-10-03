@@ -34,16 +34,21 @@ jobs:
         with:
           gradle-version: "8.10.2"
 
-      - name: Build release APK
-        run: gradle assembleRelease
+      - name: Build signed release APK
+        env:
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: gradle assembleRelease --no-daemon
 
       - name: SHA-256
-        run: sha256sum app/build/outputs/apk/release/app-release-unsigned.apk | tee SHA256SUMS.txt
+        run: sha256sum app/build/outputs/apk/release/app-release.apk | tee SHA256SUMS.txt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: precision-clock-release
           path: |
-            app/build/outputs/apk/release/*.apk
+            app/build/outputs/apk/release/app-release.apk
             SHA256SUMS.txt
